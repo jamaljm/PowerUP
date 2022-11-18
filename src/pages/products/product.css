@@ -1,0 +1,40 @@
+.product_body{
+  flex: 4;
+  margin: 0px 20px;
+  border-radius: 20px;
+}
+.product_table{
+  background-color: #fff;
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.productListItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.productListImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.productListEdit{
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    background-color: #4e52a7;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.productListDelete{
+    color: rgb(119 0 0);
+    cursor: pointer;
+}
+

@@ -1,0 +1,105 @@
+.signupcontainer{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    background: rgb(243, 243, 243);
+    padding: 20px;
+    justify-content: center;
+    
+        align-items: center;
+}
+
+.signupcontainer h2, h1{
+    
+    color: rgb(247, 247, 247);
+    margin-bottom: 10px;
+}
+
+.Aboutcard{
+    max-width: 35%;
+    min-width: 25%;
+    
+    min-height: 503px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #FF9551;
+    border-radius: 20px 0px 0px 20px;
+    padding-bottom: 5px;
+    justify-items: center;
+}
+.signupcontainer p{
+    text-align: center;
+}
+.signupcard{
+    max-width: 40%;
+    min-width: 30%;
+    min-height: 390px;
+    background: #fff;
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+        justify-content: center;
+    
+}
+.asdf{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+input {
+    width: 80%;
+    padding: 9px 20px;
+    border-radius: 20px;
+    border: 1px solid #b0b0b0;
+}
+.signupform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.signupcard button{
+        width: 100%;
+            background: #FF9551;
+            border: none;
+            color: #f7f7ff;
+            font-weight: 600;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 20px;
+            align-self: center;
+            
+}
+.signupheading{
+    font-size: 20px;
+    width: 50%;
+    font-weight: 600;
+    color: #000;
+    background: #eeeeee;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.Aboutcard button{
+    width: 50%;
+    background: #cef4ed;
+    border: none;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    align-self: center;
+}

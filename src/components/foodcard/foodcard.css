@@ -1,0 +1,26 @@
+.foodinfobottombutton{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 23px;
+
+
+}
+.foodinfobottombutton button{
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #fe734c;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+}
+.foodCardBottomRight h2{
+    font-family: 'poppins';
+    font-weight: 600;
+}
+.foodCardTopRight{
+    font-size: 12px;
+}
