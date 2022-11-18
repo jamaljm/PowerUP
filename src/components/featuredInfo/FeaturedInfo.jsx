@@ -1,11 +1,12 @@
 import "./featuredInfo.css";
-import { CalendarToday, LocationOn } from "@material-ui/icons";
+import { CalendarToday, LocationOn, MoreVert } from "@material-ui/icons";
 import Foodcard from "../foodcard/foodcard";
 import WidgetSm from "../widgetSm/WidgetSm";
 import axios from "axios";
 import Addrequest from "../Addrequest";
 import { useEffect, useState } from "react";
 import { TbSquareDot } from "react-icons/tb";
+
 
 export default function FeaturedInfo() {
   const token = window.localStorage.getItem("token");
@@ -83,117 +84,87 @@ export default function FeaturedInfo() {
   return (
     <div className="featured">
       <div className="featuredItem1">
-        <div className="searchBox">
+
+        <div className="profilecard">
+            <div className="sidebarprofiletop">
+              <div className="sidebarprofiletop-left">
+
+              <p>Profile
+                </p>
+              </div>
+              <div className="sidebarprofiletop-right">
+                <button><MoreVert /></button>
+
+
+              </div>
+            </div>
+          <div className="sidebarprofile">
+          
+            
+              
+          <img
+            src="https://avatars.githubusercontent.com/u/34004150?v=4"
+            alt=""
+            className="topAvatar2"
+          />
+            <p className="sidebarprofile-name">Jamal</p>
+            <div className="sidebarprofileinfo_username">
+            </div>
+          <div className="sidebarprofileinfo">
+            <div className="profileinfocard">
+                <button>Log Out</button>
+            </div>
+          </div>
+        </div>
+        </div>
+
+          <div className="mallcard">
+           <div className="sidebarprofiletop">
+              <div className="sidebarprofiletop-left">
+
+              <p>Malls
+                </p>
+              </div>
+              <div className="sidebarprofiletop-right">
+
+
+              </div>
+          </div>
+          <div className="mallsmallcard">
+            <div className="mallsmallcard-left">
+              <img
+                src="https://thumb.cadbull.com/img/product_img/original/multi-story_luxuries_shopping_mall_front_design_photoshop_file_22082018124429.png"
+                alt=""
+                className="topAvatar2"
+              />
+              <p>LuLu Malls</p>
+            </div>
+            <div className="mallsmallcard-right">
+              <button>View</button>
+              </div>
+            
+          </div>
+          </div>
+
+
+  
+        {/* <div className="searchBox">
           <input
             placeholder="Location:"
             value={q}
             onChange={(e) => setQ(e.target.value)}
           ></input>
           <button>Search</button>
-        </div>
-        <div className="foodCardsection">
-          {search(data)
-            .slice(0)
-            .reverse()
-            .map((item) => (
-              <div key={item._id}>
-                <div className="foodCard">
-                  <div className="foodCardTop">
-                    <div className="foodCardTopLeft">
-                      <img
-                        src="https://avatars.githubusercontent.com/u/34004150?v=4"
-                        alt=""
-                        className="topAvatar"
-                      />
-                      <span className="foodCardSubTitle">
-                        {item.userId.name}
-                      </span>
-                    </div>
-                    <div className="foodCardTopRight">
-                      <CalendarToday className="foodCardIcon" />
-                      <span className="foodCardPercent">
-                        {item.createdOn.slice(0, 10)}
-                      </span>
-                      <span className="foodCardPercent1">
-                        {item.createdOn.slice(11, 16)}
-                      </span>
-                    </div>
-                  </div>
-                  <div className="foodCardBottom">
-                    <div className="foodCardBottomLeft">
-                      <img
-                        src="https://images.pexels.com/photos/6260921/pexels-photo-6260921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt=""
-                        className="foodimage"
-                      />
-                    </div>
-                    <div className="foodCardBottomRight">
-                      <h2>{item.title}</h2>
-                      <div className="foodInfo">
-                        <div className="foodInfoTop">
-                          <div className="foodInfoChild">
-                            <span className="foodInfoKey">
-                              Food Type:{" "}
-                              {item.isNonVeg ? (
-                                <img
-                                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Non_veg_symbol.svg/2048px-Non_veg_symbol.svg.png"
-                                  alt=""
-                                  className="topAvatar1"
-                                />
-                              ) : (
-                                <img
-                                  src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Veg_symbol.svg"
-                                  alt=""
-                                  className="topAvatar1"
-                                />
-                              )}{" "}
-                            </span>
-                          </div>
-                          <span className="foodInfoValue">
-                            Quantity : {item.numberOfServing}
-                          </span>
-                        </div>
-                        <div className="foodInfoBottom">
-                          <div className="foodInfoChild">
-                            <LocationOn />
-                            <span className="foodInfoKey">{item.city} </span>
-                          </div>
-                          <span className="foodInfoValue">
-                            Expiry: {item.expiry.slice(0, 10)}
-                          </span>
-                        </div>
+        </div> */}
 
-                        <div className="foodinfobottombutton">
-                          <button
-                            className="foodinfobutton"
-                            key={item._id}
-                            // onClick={() => acceptRequest(item._id)}
-                            disabled={item.isAccepted}
-                          >
-                            {item.isAccepted ? "Accepted " : "Accept"}
-                          </button>
-                          <button
-                            className="foodinfobutton"
-                            key={item._id}
-                            //onClick={() => acceptDelivery(item._id)}
-                            disabled={item.isDelivery}
-                          >
-                            {item.isDelivery ? "Delivered" : "Deliver"}
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-        </div>
+        
       </div>
       <div className="featuredItem2">
-        <div className="widgetSm1">
-          <Addrequest />
-          <WidgetSm />
-        </div>
+        
+          
+      </div>
+      <div className="featuredItem3">
+         
       </div>
     </div>
   );

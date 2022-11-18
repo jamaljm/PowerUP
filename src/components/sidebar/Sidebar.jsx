@@ -16,7 +16,12 @@ export default function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebarWrapper">
-        <div className="sidebarprofile">
+        <div className="sidebarLogo">
+          <img src="image/"></img>
+
+       
+        </div>
+        {/* <div className="sidebarprofile">
           <img
             src="https://avatars.githubusercontent.com/u/34004150?v=4"
             alt=""
@@ -28,31 +33,30 @@ export default function Sidebar() {
               <button>View Profile</button>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="sidebarMenu">
           <ul className="sidebarList">
             <Link to="/home" className="link">
               <li className="sidebarListItem active">
                 <Widgets className="sidebarIcon active" />
-                Home
+                
               </li>
             </Link>
             <Link to="/home" className="link">
               <li className="sidebarListItem">
                 <TrendingUp className="sidebarIcon" />
-                Contribute Food
               </li>
             </Link>
             {/* <Link to="" className="link"> */}
             <li className="sidebarListItem">
               <PermIdentity className="sidebarIcon" />
-              Organizers
+              
             </li>
             {/* </Link> */}
 
             <li className="sidebarListItem">
               <BarChart className="sidebarIcon" />
-              Leaderboard
+              
             </li>
           </ul>
         </div>
