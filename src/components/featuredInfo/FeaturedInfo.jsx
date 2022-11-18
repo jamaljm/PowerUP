@@ -144,6 +144,53 @@ export default function FeaturedInfo() {
               </div>
             
           </div>
+
+           <div className="mallsmallcard">
+            <div className="mallsmallcard-left">
+              <img
+                src="https://thumb.cadbull.com/img/product_img/original/multi-story_luxuries_shopping_mall_front_design_photoshop_file_22082018124429.png"
+                alt=""
+                className="topAvatar2"
+              />
+              <p>LuLu Malls</p>
+            </div>
+            <div className="mallsmallcard-right">
+              <button>View</button>
+              </div>
+            
+          </div>
+
+           <div className="mallsmallcard">
+            <div className="mallsmallcard-left">
+              <img
+                src="https://thumb.cadbull.com/img/product_img/original/multi-story_luxuries_shopping_mall_front_design_photoshop_file_22082018124429.png"
+                alt=""
+                className="topAvatar2"
+              />
+              <p>LuLu Malls</p>
+            </div>
+            <div className="mallsmallcard-right">
+              <button>View</button>
+              </div>
+            
+          </div>
+            <div className="mallsmallcard">
+            <div className="mallsmallcard-left">
+              <img
+                src="https://thumb.cadbull.com/img/product_img/original/multi-story_luxuries_shopping_mall_front_design_photoshop_file_22082018124429.png"
+                alt=""
+                className="topAvatar2"
+              />
+              <p>LuLu Malls</p>
+            </div>
+            <div className="mallsmallcard-right">
+              <button>View</button>
+              </div>
+            
+          </div>
+          
+
+
           </div>
 
 
