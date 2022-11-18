@@ -207,6 +207,13 @@ export default function FeaturedInfo() {
         
       </div>
       <div className="featuredItem2">
+        <video autoPlay loop muted className="videobg">
+            <source src="https://cdn.dribbble.com/userupload/2802099/file/original-a1aac6f8d058c10693402742f905b09e.mp4" type='video/mp4' />
+        </video>
+        
+
+    
+        
         
           
       </div>
