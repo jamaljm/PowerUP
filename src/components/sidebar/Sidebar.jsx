@@ -17,7 +17,7 @@ export default function Sidebar() {
     <div className="sidebar">
       <div className="sidebarWrapper">
         <div className="sidebarLogo">
-          <img src="image/"></img>
+          <img src="https://i.imgur.com/BYA1uH6.png"></img>
 
        
         </div>

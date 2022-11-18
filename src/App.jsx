@@ -33,7 +33,7 @@ function App() {
   return (
     <>
       <div className="App">
-        {auth && <Navbar />}
+     
         <div className="container">
           {auth && <Sidebar />}
           <Routes>

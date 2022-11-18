@@ -207,9 +207,24 @@ export default function FeaturedInfo() {
         
       </div>
       <div className="featuredItem2">
-        <video autoPlay loop muted className="videobg">
+        {/* <video autoPlay loop muted className="videobg">
             <source src="https://cdn.dribbble.com/userupload/2802099/file/original-a1aac6f8d058c10693402742f905b09e.mp4" type='video/mp4' />
-        </video>
+        </video> */}
+
+        <div className="featuredItem2-top">
+          <div className="featuredItem2-top-top">
+            <img src="https://i.imgur.com/9ZP5F76.png"></img>
+            <p>PowerUP</p>
+          </div>
+        </div>
+        <div className="featuredItem2-bottom">
+          <button>
+            View Booking
+
+          </button>
+          </div>
+
+            
         
 
     
@@ -218,7 +233,17 @@ export default function FeaturedInfo() {
           
       </div>
       <div className="featuredItem3">
-         
+
+        <div className="locationinput">
+
+        <input placeholder="From">
+
+        </input>
+        <input placeholder="To">
+        </input>
+          <button>Find Charging Station</button>
+          </div>
+
       </div>
     </div>
   );
