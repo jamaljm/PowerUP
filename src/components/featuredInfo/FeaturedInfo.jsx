@@ -8,6 +8,8 @@ import { useEffect, useState } from "react";
 import { TbSquareDot } from "react-icons/tb";
 import Mallcard from "../mallcard/mallcard";
 import Powerup from "../poweup";
+import { useNavigate } from "react-router-dom";
+
 
 
 
@@ -91,6 +93,14 @@ export default function FeaturedInfo() {
     getPosts();
   }, []);
 
+  const navigate = useNavigate();
+  
+  function Logout() {
+    window.localStorage.removeItem("token");
+    window.localStorage.removeItem("auth");
+    navigate("/login");
+  }
+
   return (
     <div className="featured">
       <div className="featuredItem1">
@@ -122,7 +132,7 @@ export default function FeaturedInfo() {
             </div>
           <div className="sidebarprofileinfo">
             <div className="profileinfocard">
-                <button>Log Out</button>
+                <button onClick={Logout}>Logout{" "}</button>
             </div>
           </div>
         </div>

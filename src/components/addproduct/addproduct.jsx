@@ -3,7 +3,7 @@ import "./addproduct.css";
 export default function AddProduct() {
   return (
     <div className="productList">
-      <div className="newProduct">
+      {/* <div className="newProduct">
       <h2 className="addProductTitle">Add New Product</h2>
       <form className="addProductForm">
       <div className="addProductRow1">
@@ -35,7 +35,7 @@ export default function AddProduct() {
         <button className="addProductButton">Add Product</button>
 
       </form>
-    </div>
+    </div> */}
     </div>
   );
 }
