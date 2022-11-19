@@ -66,13 +66,17 @@ function SignupPage() {
   return (
     <div className="signupcontainer">
       <div className="Aboutcard">
-        <h1>Bon Appetit</h1>
-        <h2>Where Hunger Stops.</h2>
-
-        <button>About us </button>
+          <video autoPlay loop muted className="videobg">
+            <source src="https://cdn.dribbble.com/userupload/2802099/file/original-a1aac6f8d058c10693402742f905b09e.mp4" type='video/mp4' />
+        </video>
       </div>
       <div className="signupcard">
         <form className="signupform" onSubmit={handleSubmit1}>
+          <div className="featuredItem2-top-top1 ">
+            <img src="https://i.imgur.com/28Hhzdx.png"></img>
+            <p color="#000"><span color="#000">PowerUP</span></p>
+          </div>
+          <br></br>
           <h5 className="signupheading">Sign up </h5>
           <div className="asdf">
             <label className=""></label>
@@ -94,11 +98,7 @@ function SignupPage() {
               className=""
               required
             />
-            <label for="dog-names">I am a </label>
-            <select name="type" id="dog-names" onChange={handleType}>
-              <option value="volunteer">Volunteer</option>
-              <option value="org">Organization</option>
-            </select>
+           
 
             <input
               type="password"

@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 
 
 
-export default function Mallcard() {
+export default function Mallcard2() {
 
 
   return (
@@ -19,7 +19,7 @@ export default function Mallcard() {
                     <img src="https://kerala.mallsmarket.com/sites/default/files/photos/malls/lulu-mall-thiruvananthapuram-1.jpg" alt="" className="foodimage" />
                 </div>
                 <div className="foodCardBottomRight">
-                    <h2>Grand Mall Toll Junction</h2>
+                    <h2>LuLu International Mall</h2>
                     <div className="foodInfo">
                         
                         <div className="foodInfoBottom">

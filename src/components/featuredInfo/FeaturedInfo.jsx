@@ -9,6 +9,9 @@ import { TbSquareDot } from "react-icons/tb";
 import Mallcard from "../mallcard/mallcard";
 import Powerup from "../poweup";
 import { useNavigate } from "react-router-dom";
+import Mallcard1 from "../mallcard/mallcard1";
+import Mallcard2 from "../mallcard/mallcard2";
+
 
 
 
@@ -26,10 +29,13 @@ export default function FeaturedInfo() {
   const [searchParam] = useState(["city", "city"]);
   const [bookcard, setBookcard] = useState("true");
   const [isActive, setActive] = useState(false);
-      const [booknow, setBooknow] = useState("true");
+  const [booknow, setBooknow] = useState("true");
+  
+  const datass = { "niw":booknow };
+  export default datass;
 
-
-
+  
+  
 
   const config = {
     headers: { Authorization: `Bearer ${token}` },
@@ -142,13 +148,10 @@ export default function FeaturedInfo() {
            <div className="sidebarprofiletop">
               <div className="sidebarprofiletop-left">
 
-              <p>Malls
+              <p>My Car
                 </p>
               </div>
-              <div className="sidebarprofiletop-right">
-
-
-              </div>
+              
           </div>
           <div className="mallsmallcard">
             <div className="mallsmallcard-left">
@@ -227,13 +230,11 @@ export default function FeaturedInfo() {
         
       </div>
       <div className="featuredItem2">
-        {/* <video autoPlay loop muted className="videobg">
-            <source src="https://cdn.dribbble.com/userupload/2802099/file/original-a1aac6f8d058c10693402742f905b09e.mp4" type='video/mp4' />
-        </video> */}
+      
 
         {bookcard &&  booknow && <Powerup /> }
-        {!bookcard && booknow && <Mallcard />}
-        {!bookcard && booknow && <Mallcard />}
+        {!bookcard && booknow && <Mallcard2 />}
+        {!bookcard && booknow && <Mallcard1 />}
         {!bookcard && booknow && <Mallcard />}
         
 
