@@ -6,6 +6,10 @@ import axios from "axios";
 import Addrequest from "../Addrequest";
 import { useEffect, useState } from "react";
 import { TbSquareDot } from "react-icons/tb";
+import Mallcard from "../mallcard/mallcard";
+import Powerup from "../poweup";
+
+
 
 
 export default function FeaturedInfo() {
@@ -18,6 +22,12 @@ export default function FeaturedInfo() {
   //     you can search countries even by their population
   // just add it to this array
   const [searchParam] = useState(["city", "city"]);
+  const [bookcard, setBookcard] = useState("true");
+  const [isActive, setActive] = useState(false);
+      const [booknow, setBooknow] = useState("true");
+
+
+
 
   const config = {
     headers: { Authorization: `Bearer ${token}` },
@@ -211,18 +221,18 @@ export default function FeaturedInfo() {
             <source src="https://cdn.dribbble.com/userupload/2802099/file/original-a1aac6f8d058c10693402742f905b09e.mp4" type='video/mp4' />
         </video> */}
 
-        <div className="featuredItem2-top">
-          <div className="featuredItem2-top-top">
-            <img src="https://i.imgur.com/9ZP5F76.png"></img>
-            <p>PowerUP</p>
-          </div>
-        </div>
-        <div className="featuredItem2-bottom">
-          <button>
-            View Booking
+        {bookcard &&  booknow && <Powerup /> }
+        {!bookcard && booknow && <Mallcard />}
+        {!bookcard && booknow && <Mallcard />}
+        {!bookcard && booknow && <Mallcard />}
+        
 
-          </button>
-          </div>
+
+
+
+
+        
+
 
             
         
@@ -233,15 +243,30 @@ export default function FeaturedInfo() {
           
       </div>
       <div className="featuredItem3">
+          <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d17640.48045310525!2d76.3042217471343!3d10.019215573124796!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080dafbed183bf%3A0x5951f316ba13a37e!2sLuLu%20International%20Shopping%20Malls%20Private%20Limited%20Kochi!5e0!3m2!1sen!2sin!4v1668814324318!5m2!1sen!2sin"
+          width="100%"
+              height="70%"
+              frameBorder="0"
+          style={{ border: 0 }}
+              allowFullScreen=""
+              aria-hidden="false"
+              tabIndex="10"
+            />
 
         <div className="locationinput">
+          <div className="locationinput-left">
+            <img src="https://i.imgur.com/Tz6dKer.png" />
+          </div>
+          <div className="locationinput-right">
 
         <input placeholder="From">
 
         </input>
         <input placeholder="To">
         </input>
-          <button>Find Charging Station</button>
+          <button onClick={() => setBookcard(false)}>Find Charging Station</button>
+          </div>
           </div>
 
       </div>
