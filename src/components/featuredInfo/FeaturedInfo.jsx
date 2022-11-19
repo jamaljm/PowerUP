@@ -31,8 +31,7 @@ export default function FeaturedInfo() {
   const [isActive, setActive] = useState(false);
   const [booknow, setBooknow] = useState("true");
   
-  const datass = { "niw":booknow };
-  export default datass;
+
 
   
   
