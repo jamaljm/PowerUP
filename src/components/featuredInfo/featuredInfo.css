@@ -8,7 +8,7 @@
 }
 
 .featuredItem1 {
-  flex: 1;
+  flex: .8;
   margin: 0px 20px 0px 30px;
   border-radius: 20px;
   display: flex;
@@ -35,7 +35,7 @@
 
 }
 .featuredItem3 {
-    flex: 2.5;
+    flex: 2.8;
     margin: 0px 35px 0px 20px;
     border-radius: 30px;
     cursor: pointer;
@@ -201,7 +201,7 @@ background: #C2DFF2;
     align-items: center;
     border-radius: 10px;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     padding: 5px 20px;
 
@@ -354,4 +354,45 @@ display: flex;
     justify-content: space-between;
 gap: 10px;
     padding: 16px 0px 15px 0px;
+}
+.mycarimg img{
+    width: 213px;
+        height: 100px;
+}
+.mycarinfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    z-index: 6;
+    height: 100%;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 16px 0px 15px 0px;
+}
+.button{
+    background: #f7f9fb00;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #000;
+    font-weight: 600;
+    
+}
+.featuredItem2 button{
+    background: #f7f9fb00;
+        border: none;
+        outline: none;
+        cursor: arrow;
+}
+.featuredItem2-top1{
+    display: flex;
+    align-items: center;
+  gap: 20px;
+    width: 100%;
+    flex-direction: column;
+    
 }

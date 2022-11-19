@@ -121,3 +121,7 @@
     gap: 14px;
     flex-direction: column;
 }
+.foodCardBottomRight h2{
+    font-size: 500;
+
+}

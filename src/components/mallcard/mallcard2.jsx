@@ -30,7 +30,7 @@ export default function Mallcard2() {
                         </div>
                    
                         <div className="foodinfobottombutton">
-                            <button className="foodinfobutton">Book NOw</button>
+                            <button className="foodinfobutton">Book Now</button>
                             
                     </div>
                         

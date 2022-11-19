@@ -11,10 +11,7 @@ export default function poweup() {
           </div>
         </div>
         <div className="featuredItem2-bottom">
-          <button>
-            View Booking
-
-          </button>
+         
           </div>
     </div>
   )

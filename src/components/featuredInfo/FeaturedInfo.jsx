@@ -11,7 +11,7 @@ import Powerup from "../poweup";
 import { useNavigate } from "react-router-dom";
 import Mallcard1 from "../mallcard/mallcard1";
 import Mallcard2 from "../mallcard/mallcard2";
-import Booking from "../booking/booking";
+import Booking from "../zbooking/booking";
 
 
 
@@ -154,21 +154,20 @@ console.log(booknow);
               
           </div>
           <div className="mallsmallcard">
-            <div className="mallsmallcard-left">
-              <img
-                src="https://thumb.cadbull.com/img/product_img/original/multi-story_luxuries_shopping_mall_front_design_photoshop_file_22082018124429.png"
-                alt=""
-                className="topAvatar2"
-              />
-              <p>LuLu Malls</p>
+            <div className="mycarimg">
+            <img src="https://i.pinimg.com/originals/32/14/61/321461ec733901a15244584ecc2940f4.png">
+
+            </img>
             </div>
-            <div className="mallsmallcard-right">
-              <button>View</button>
-              </div>
-            
+    
+            <div className="mycarinfo">
+              <h3>Current Charge: 60%</h3>
+              <p>Estimated Km : 34km</p>
+
+            </div>
           </div>
 
-           <div className="mallsmallcard">
+           {/* <div className="mallsmallcard">
             <div className="mallsmallcard-left">
               <img
                 src="https://thumb.cadbull.com/img/product_img/original/multi-story_luxuries_shopping_mall_front_design_photoshop_file_22082018124429.png"
@@ -210,7 +209,7 @@ console.log(booknow);
               <button>View</button>
               </div>
             
-          </div>
+          </div> */}
           
 
 
@@ -230,17 +229,27 @@ console.log(booknow);
         
       </div>
       <div className="featuredItem2">
-      
-
-        {bookcard &&  booknow && <Powerup /> }
-        {!bookcard && booknow && <Mallcard2 onClick={() => setBooknow(false)}/>}
-        {!bookcard && booknow && <Mallcard1 onClick={() => setBooknow(false)}/>}
-        {!bookcard && booknow && <Mallcard onClick={() => setBooknow(false)} />}
+        <div className="featuredItem2-top1">
+        {bookcard && booknow && <Powerup />}
+        {!bookcard && booknow && (
+          <button classname="buttonsp" onClick={() => setBooknow(false)}>
+            <Mallcard2 />
+          </button>
+        )}
+        {!bookcard && booknow && (
+          <button onClick={() => setBooknow(false)}>
+            <Mallcard1 />
+          </button>
+        )}
         
-        { <Booking />}
+          {!bookcard && booknow && (
+          <button onClick={() => setBooknow(false)}>
+            <Mallcard />
+          </button>)
+        }
 
-        
-          
+          {!booknow && <Booking />}
+          </div>
       </div>
       <div className="featuredItem3">
           <iframe

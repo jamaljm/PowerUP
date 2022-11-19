@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 
 
 export default function Mallcard() {
+  const [booknowcard, setBooknowcard] = useState(true);
 
 
   return (
@@ -16,7 +17,7 @@ export default function Mallcard() {
             <div className="foodCardBottom">
                 <div className="foodCardBottomLeft">
 
-                    <img src="https://kerala.mallsmarket.com/sites/default/files/photos/malls/lulu-mall-thiruvananthapuram-1.jpg" alt="" className="foodimage" />
+                    <img src="https://content.jdmagicbox.com/comp/ernakulam/b9/0484px484.x484.180208123903.z4b9/catalogue/grand-mall-edapally-ernakulam-malls-79w3n5cyoj.jpg?clr=333333" alt="" className="foodimage" />
                 </div>
                 <div className="foodCardBottomRight">
                     <h2>Grand Mall Toll Junction</h2>
