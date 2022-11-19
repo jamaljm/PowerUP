@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function booking() {
+export default function Booking() {
   return (
       <div className='bookingcard'>
           <h2>Book A Slot</h2>

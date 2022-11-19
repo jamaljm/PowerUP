@@ -11,6 +11,7 @@ import Powerup from "../poweup";
 import { useNavigate } from "react-router-dom";
 import Mallcard1 from "../mallcard/mallcard1";
 import Mallcard2 from "../mallcard/mallcard2";
+import Booking from "../booking/booking";
 
 
 
@@ -29,7 +30,7 @@ export default function FeaturedInfo() {
   const [searchParam] = useState(["city", "city"]);
   const [bookcard, setBookcard] = useState("true");
   const [isActive, setActive] = useState(false);
-  const [booknow, setBooknow] = useState("true");
+  const [booknow, setBooknow] = useState(true);
   
 
 
@@ -105,7 +106,7 @@ export default function FeaturedInfo() {
     window.localStorage.removeItem("auth");
     navigate("/login");
   }
-
+console.log(booknow);
   return (
     <div className="featured">
       <div className="featuredItem1">
@@ -232,23 +233,12 @@ export default function FeaturedInfo() {
       
 
         {bookcard &&  booknow && <Powerup /> }
-        {!bookcard && booknow && <Mallcard2 />}
-        {!bookcard && booknow && <Mallcard1 />}
-        {!bookcard && booknow && <Mallcard />}
+        {!bookcard && booknow && <Mallcard2 onClick={() => setBooknow(false)}/>}
+        {!bookcard && booknow && <Mallcard1 onClick={() => setBooknow(false)}/>}
+        {!bookcard && booknow && <Mallcard onClick={() => setBooknow(false)} />}
         
+        { <Booking />}
 
-
-
-
-
-        
-
-
-            
-        
-
-    
-        
         
           
       </div>
