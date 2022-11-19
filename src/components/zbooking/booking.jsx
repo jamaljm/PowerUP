@@ -16,19 +16,19 @@ export default function Booking() {
           <div className='bookingslotes'>
               
           <div className="bookingcard-top5">
-          <button>AD203</button>
-                  <button >AD203</button>
-                  <button >AD203</button>
+          <a href="https://i.imgur.com/wfWGiHc.png"><button >AD203</button></a>
+                  <a href="https://i.imgur.com/wfWGiHc.png"><button >AD204</button></a>
+                  <a href="https://i.imgur.com/wfWGiHc.png"><button >AD205</button></a>
           </div>
           <div className="bookingcard-top5">
-              <button>AD206</button>
-              <button >AD207</button>
-              <button >AD208</button>
+              <a href="https://i.imgur.com/wfWGiHc.png"><button >AD206</button></a>
+              <a href="https://i.imgur.com/wfWGiHc.png"><button >AD207</button></a>
+              <a href="https://i.imgur.com/wfWGiHc.png"><button >AD208</button></a>
           </div>
           <div className="bookingcard-top5">
-              <button >AD209</button>
-              <button >AD210</button>
-              <button >AD211</button>
+             <a href="https://i.imgur.com/wfWGiHc.png"><button >AD209</button></a>
+             <a href="https://i.imgur.com/wfWGiHc.png"><button >AD210</button></a>
+              <a href="https://i.imgur.com/wfWGiHc.png"><button >AD211</button></a>
           </div>
       </div>
     </div> 
