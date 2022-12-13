@@ -37,9 +37,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="https://img.shields.io/badge/replit-667881?style=for-the-badge&logo=replit&logoColor=white"></img>
-<img src="https://img.shields.io/badge/replit-667881?style=for-the-badge&logo=replit&logoColor=white"></img>
-<img src="https://img.shields.io/badge/replit-667881?style=for-the-badge&logo=replit&logoColor=white"></img>
+<img src="src/images/p1.jpg"></img>
+<img src="src/images/p2.jpg"></img>
+<img src="src/images/p3.jpg"></img>
+<img src="src/images/p4.jpg"></img>
 
 
 
