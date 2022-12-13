@@ -16,7 +16,6 @@
 
 <div align="center">
   <a href="">
-    <img src="" alt="Logo" height="80">
   </a>
 
   <h1 align="center">PowerUP</h1>
